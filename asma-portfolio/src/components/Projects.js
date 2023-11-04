@@ -33,7 +33,7 @@ function Projects() {
                         <h3>Asma React Portfolio</h3>
                         <p><strong>Technologies Used:</strong> Node.js, JavaScript (ES6+), HTML5, CSS3, and essential tools like Webpack, Babel, and Git for development and deployment.</p>
                         <div className="project-actions">
-                            <a href="https://github.com/Asmasaiyed104/Java-Enterprise/tree/master" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                            <a href="https://github.com/Asmasaiyed104/Asma-Portfolio-React/tree/master" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                             <a href="https://youtu.be/sEZMnfAHMnA" target="_blank" rel="noopener noreferrer">Live Demo</a>
                         </div>
                     </div>
@@ -48,7 +48,7 @@ function Projects() {
                         <h3>WPF Product Management System</h3>
                         <p><strong>Technologies Used:</strong> WPF, XAML, C#, and more.</p>
                         <div className="project-actions">
-                            <a href="https://github.com/Asmasaiyed104/Final_AsmabanuSaiyed.git" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                            <a href="https://github.com/Asmasaiyed104/Final_AsmabanuSaiyed" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                             <a href="https://youtu.be/ZMoNWQbchBs?si=bzZ2qt3BJDOlqb14" target="_blank" rel="noopener noreferrer">Live Demo</a>
                         </div>
                     </div>
@@ -121,8 +121,22 @@ function Projects() {
                         <h3>HTML and CSS </h3>
                         <p><strong>Technologies Used:</strong> HTML5, CSS, Media responsive</p>
                         <div className="project-actions">
-                            <a href="https://github.com/Asmasaiyed104/Spring-Boot-Rest-API-Voting-System/tree/master" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                            <a href="https://github.com/Asmasaiyed104?tab=repositories" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                             <a href="https://www.youtube.com/watch?v=1LcEQjZpOtI" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                {/* Nine'th Project.. */}
+                <div className="project">
+                    <div className="project-thumbnail">
+                        <img src="/image/database.jpg"alt="Sixth Project Name" />
+                    </div>
+                    <div className="project-details">
+                        <h3>Database </h3>
+                        <p><strong>Technologies Used:</strong> SQL, Relational Databases, Data Manipulation,Transaction Control, Backup and Recovery, User Access Management</p>
+                        <div className="project-actions">
+                            <a href="https://github.com/Asmasaiyed104/Database-" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                            <a href="https://youtu.be/EA8zIGqWJH4" target="_blank" rel="noopener noreferrer">Live Demo</a>
                         </div>
                     </div>
                 </div>
