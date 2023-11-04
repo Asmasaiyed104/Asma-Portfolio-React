@@ -126,6 +126,151 @@
   .tagline, .intro-text {
     font-size: 1.3rem; /* Slightly larger font size for better readability */
   }
+  /* Header.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* ... [rest of your CSS] ... */
+
+@media (min-width: 1200px) {
+  /* Styles for large screens / desktops */
+  .header {
+    padding: 40px 80px; /* More horizontal padding on larger screens */
+  }
+
+  .name {
+    font-size: 4rem; /* Larger font size for desktops */
+  }
+
+  .tagline, .intro-text {
+    font-size: 1.8rem;
+  }
+
+  .profile-pic {
+    width: 400px; /* Adjusted for larger screens */
+    height: 400px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Styles for medium screens, small desktops or landscape tablets */
+  .header {
+    padding: 40px 60px; /* Slightly less padding than larger screens */
+  }
+
+  .name {
+    font-size: 3.5rem;
+  }
+
+  .tagline, .intro-text {
+    font-size: 1.5rem;
+  }
+
+  .profile-pic {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Styles for tablets */
+  .header {
+    padding: 20px 40px;
+  }
+
+  .name {
+    font-size: 3rem; /* Adjust the name size for tablet devices */
+  }
+
+  .tagline, .intro-text {
+    font-size: 1.4rem; /* Adjust text size for readability on tablets */
+  }
+
+  .profile-pic {
+    width: 300px; /* Adjust profile picture size for tablets */
+    height: 300px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Styles for large phones */
+  .header {
+    padding: 20px; /* Adjust padding for smaller devices */
+  }
+
+  .name {
+    font-size: 2.5rem; /* Smaller font size for large phones */
+  }
+
+  .tagline, .intro-text {
+    font-size: 1.3rem; /* Adjust text size for better readability on phones */
+  }
+
+  .profile-pic {
+    width: 250px; /* Smaller profile picture for large phones */
+    height: 250px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* Styles for small phones */
+  .header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .header-content, .image-container {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .name {
+    font-size: 2rem; /* Even smaller font size for small phones */
+  }
+
+  .tagline, .intro-text {
+    font-size: 1rem; /* Adjust text size for small devices */
+  }
+
+  .profile-pic {
+    width: 200px; /* Adjust profile picture size for small phones */
+    height: 200px;
+  }
+}
+@media (max-width: 320px) {
+  /* Styles for iPhone SE and similar small devices */
+  .header {
+    padding: 10px; /* Adjust the padding for very small screens */
+  }
+
+  .header-content, .image-container {
+    margin: 0; /* Remove margins that could cause layout issues */
+  }
+
+  .name {
+    font-size: 1.8rem; /* Reduce the font size to fit the screen */
+    margin: 5px 0; /* Reduce margin */
+  }
+
+  .tagline {
+    font-size: 1rem; /* Smaller font size for tagline */
+    margin-bottom: 0.5rem; /* Adjust bottom margin */
+  }
+
+  .intro-text {
+    font-size: 0.9rem; /* Smaller font size for intro text */
+    padding: 0 10px; /* Adjust padding */
+    margin-top: 10px; /* Adjust top margin */
+    border-top: none; /* Remove border to save space */
+  }
+
+  .profile-pic {
+    width: 120px; /* Smaller profile picture for very small devices */
+    height: 120px;
+    margin: 10px auto; /* Center the image with automatic horizontal margins */
+  }
+
+  /* Any other specific styles for small devices can go here */
+}
+
 
   .profile-pic {
     width: 150px; /* Smaller profile picture on smaller screens */

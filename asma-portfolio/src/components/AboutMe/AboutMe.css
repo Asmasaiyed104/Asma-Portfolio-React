@@ -120,3 +120,74 @@
         height: 70px;
     }
 }
+/* Base styles omitted for brevity... */
+
+/* Responsive Styles for Various Devices */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    /* Styles for smaller devices */
+}
+
+/* iPhone X, XS, 11 Pro, 12 Mini, 13 Mini, 14 (portrait and landscape) */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+    /* Styles for iPhone X, XS, 11 Pro, 12 Mini, 13 Mini, 14 */
+}
+
+/* iPhone 6+, 7+, 8+, XR, 11, 11 Pro Max, 12, 12 Pro, 12 Pro Max, 13, 13 Pro, 13 Pro Max, 14 Plus, 14 Pro, 14 Pro Max (portrait and landscape) */
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-device-pixel-ratio: 3) {
+    /* Styles for larger iPhones */
+}
+
+/* Samsung Galaxy S10, S10+, S20, S21, S22 (portrait and landscape) */
+@media only screen and (min-device-width: 360px) and (max-device-width: 760px) and (-webkit-min-device-pixel-ratio: 3) {
+    /* Styles for Samsung Galaxy devices */
+}
+
+/* Tablets and small desktops */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Adjust #about-me-section grid to two columns */
+    #about-me-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Below are your existing media queries adjusted to handle various devices by width */
+
+@media (max-width: 768px) {
+    #about-me-section {
+        grid-template-columns: 1fr; /* One column on small screens */
+        padding: 4% 5%; /* Adjust padding for small screens */
+    }
+
+    .about-me-image-wrapper,
+    .about-me-image {
+        width: 250px; /* Adjust image size for small screens */
+        height: 250px;
+    }
+
+    #tech-stack img {
+        width: 60px; /* Adjust image size for small screens */
+        height: 60px;
+    }
+
+    /* Adjust fun text wrapper for smaller screens */
+    #fun-text-wrapper {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-me-image-wrapper,
+    .about-me-image {
+        width: 200px; /* Further adjust image size for very small screens */
+        height: 200px;
+    }
+
+    #tech-stack img {
+        width: 50px; /* Further adjust tech stack images for very small screens */
+        height: 50px;
+    }
+}
+
+/* You may continue adding specific styles within these breakpoints. */
