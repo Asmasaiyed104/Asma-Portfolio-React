@@ -1,0 +1,94 @@
+#contact {
+    background-color: #ffffff; /* White background for the contact section */
+    padding: 80px 0;
+    color: #333; /* Dark color for general text */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#contact h2 {
+    font-size: 1.5rem;
+  color: #111515; /* Maintaining your accent color */
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px #00000050;
+  transition: all 0.3s ease;
+  animation: fadeIn 2s ease-out;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleY(2); /* thicker line */
+    width: 110px; /* longer line for emphasis */
+    height: 4px; /* thicker line */
+    background: linear-gradient(to right, #e74c3c, #3498db); /* gradient for a modern look */
+    border-radius: 2px; /* slight rounding at the edges */
+}
+
+#contact p {
+    font-size: 1.1rem; /* Slightly larger font size for readability */
+    margin: 10px 0 40px; /* Added bottom margin for spacing */
+    animation: fadeIn 0.7s ease-out 0.5s forwards;
+    line-height: 1.6; /* more line-height for better readability */
+}
+
+#contact a {
+    display: inline-block; /* to apply padding and make it easier to click */
+    color: #34495e;
+    text-decoration: none;
+    background: #ecf0f1; /* subtle background for buttons/links */
+    padding: 10px 20px; /* padding for better touch area */
+    border-radius: 30px; /* pill shape for modern button style */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* subtle shadow for depth */
+    transition: all 0.3s;
+    font-weight: 600; /* make the text a bit bolder */
+}
+
+#contact a:hover {
+    color: #e74c3c; /* Contrasting color on hover */
+    background: linear-gradient(to right, #e74c3c, #3498db); /* gradient background on hover */
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15); /* slightly larger shadow for hover effect */
+    transform: translateY(-3px); /* lift the button up a bit on hover */
+}
+
+.social-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    animation: fadeInUp 0.7s ease-out 0.7s forwards;
+}
+
+.social-link {
+    display: inline-flex; /* using flex for centering icon inside the anchor */
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* fixed width and height for perfect circles */
+    height: 50px;
+    background: #ecf0f1; /* same subtle background as the other links */
+    border-radius: 50%; /* round shape for the social link */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* same subtle shadow for consistency */
+    transition: all 0.3s;
+}
+
+.social-link:hover {
+    background: linear-gradient(to right, #e74c3c, #3498db); /* gradient on hover for social links */
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15); /* larger shadow on hover for lift effect */
+    transform: scale(1.1); /* make the icons a bit larger on hover for interactivity */
+}
+
+.social-link img { /* assuming you use img for social icons */
+    width: 24px; /* size for the icons */
+    height: auto;
+}
+
+/* The rest of the animations remain the same */

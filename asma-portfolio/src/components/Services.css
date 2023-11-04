@@ -1,0 +1,111 @@
+.services-section {
+  padding: 100px 0;
+  background: linear-gradient(to right, #ece9e6, #ffffff); /* Light gradient for a subtle texture */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #111515; /* Maintaining your accent color */
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px #00000050;
+  transition: all 0.3s ease;
+  animation: fadeIn 2s ease-out;
+}
+
+.services-section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scaleY(2);
+  width: 110px;
+  height: 4px;
+  background: linear-gradient(to right, #2980b9, #3498db); /* Gradient line for consistency with the style */
+  border-radius: 2px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px;
+  padding: 0 5%;
+}
+
+.service-item {
+  background: #ffffff; /* Plain white background for each service item */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+  transition: all 0.3s ease-in-out;
+  border: none; /* Removing border for a cleaner look */
+  animation: fadeInUp 0.6s forwards;
+  animation-delay: calc(100ms * var(--i, 0)); /* Custom property for staggering animation */
+}
+
+.service-item:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.1); /* Larger shadow on hover for "pop" effect */
+}
+
+.service-icon {
+  font-size: 60px;
+  margin-bottom: 25px;
+  color: #2980b9; /* Icon color matching the underline */
+  transition: color 0.3s, transform 0.3s;
+}
+
+.service-item:hover .service-icon {
+  color: #3498db; /* Brighter shade for interactive feedback */
+  transform: rotate(10deg); /* Adding a slight rotation for dynamic hover effect */
+}
+
+h2 {
+  margin: 0 0 10px;
+    font-weight: 700; /* Bolder text for the title */
+    font-size: 1rem; /* Larger font size for the title */
+    letter-spacing: 1px; /* Slight letter spacing for aesthetic */
+    color:  #050707;
+}
+
+p {
+  font-size: 1.05em;
+  color: #7f8c8d;
+  line-height: 1.6; /* Slightly increased line-height for readability */
+}
+
+/* Rest of the animations are kept the same as the previous stylesheet */
+
+@media (max-width: 576px) {
+  .services-section {
+      padding: 50px 0; /* Reduced padding on small screens */
+  }
+
+  .service-item {
+      padding: 25px; /* Adjust padding for mobile */
+  }
+
+  .service-icon {
+      font-size: 40px; /* Adjust icon size for mobile */
+  }
+
+  h1 {
+      font-size: 2em; /* Adjust main heading size for mobile */
+  }
+  
+  h2 {
+      font-size: 1.3em; /* Adjust subheading size for mobile */
+  }
+
+  p {
+      font-size: 1em; /* Adjust paragraph size for mobile */
+  }
+}

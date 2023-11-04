@@ -1,0 +1,122 @@
+#about-me-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 2rem; /* Spacing between the columns */
+    padding: 4% 8%;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1B1B2F 0%, #414163 100%); /* Gradient background to match the header */
+    color: #F0F0F0; /* Light font color for contrast */
+    align-items: center;
+}
+
+.about-me-image-wrapper {
+    width: 400px; /* Fixed width for consistency */
+    height: 400px; /* Fixed height for a perfect circle */
+    object-fit: cover; /* Ensure the image covers the space without distortion */
+    border-radius: 50%; /* Circular profile picture */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for the profile picture */
+    transition: transform 0.3s ease;
+}
+
+.about-me-image {
+    width: 400px; /* Fixed width for consistency */
+    height: 400px; /* Fixed height for a perfect circle */
+    object-fit: cover; /* Ensure the image covers the space without distortion */
+    border-radius: 50%; /* Circular profile picture */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for the profile picture */
+    transition: transform 0.3s ease;
+}
+
+.about-me-image:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+#tech-stack {
+    display: grid; /* Use grid for better control over item placement */
+   
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 2rem; /* Space between logos */
+    padding: 1rem; /* Padding around the grid */
+    list-style: none; /* In case it's an unordered list */
+    margin: 2rem 0; /* Vertical spacing from other elements */
+}
+
+#tech-stack img {
+    width: 700%; /* Responsive to the size of the grid column */
+    max-width: 95px; /* Maximum width of the images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for scale and shadow */
+    will-change: transform, box-shadow; /* Optimize for properties that will change */
+    cursor: pointer; /* Indicates the item is interactive */
+}
+
+#tech-stack img:hover,
+#tech-stack img:focus {
+    transform: translateY(-5px) scale(1.1); /* Move up slightly and enlarge */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Add depth with shadow */
+}
+
+#fun-text {
+
+    margin-top: 20px; /* Space between tagline and intro text */
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.6; /* Improved line spacing */
+  color: #d9d1d1;
+ 
+  font-family: 'Arial', sans-serif;
+  opacity: 0.8;
+  text-shadow: 1px 1px 2px #5d5a5a;
+  max-width: 600px;
+  padding: 0 15px;
+  border-top: 1px solid #444444;
+  padding-top: 20px;
+  transition: color 0.3s ease;
+  }
+  
+
+
+#about-me-overlay {
+    background: rgba(27, 27, 47, 0.9); /* Slightly transparent overlay to match header color */
+    text-align: center;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+}
+
+#about-me-overlay h2 {
+    margin: 0 0 10px;
+    font-weight: 700; /* Bolder text for the title */
+    font-size: 2rem; /* Larger font size for the title */
+    letter-spacing: 1px; /* Slight letter spacing for aesthetic */
+    color:  #A6E3E9;
+}
+
+#fun-text-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap; /* Wrap the contents to maintain layout on smaller screens */
+}
+
+@media (max-width: 768px) {
+    #about-me-section {
+        grid-template-columns: 1fr; /* One column on small screens */
+        text-align: center; /* Center the text on smaller screens */
+    }
+
+    .about-me-image-wrapper {
+        justify-content: center; /* Ensure the image is centered on mobile */
+    }
+
+    #tech-stack {
+        justify-content: space-around; /* Distribute space evenly around tech stack images */
+    }
+
+    #tech-stack img {
+        width: 70px; /* Adjust the width and height on smaller screens */
+        height: 70px;
+    }
+}

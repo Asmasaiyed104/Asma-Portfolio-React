@@ -1,0 +1,28 @@
+nav {
+    background-color: #171f27; /* Dark background for contrast */
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Gradient text effect */
+    background: linear-gradient(45deg, #F06, #A6E3E9); /* Changed to match the colors you've used before */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+  }
+  
+  
+  

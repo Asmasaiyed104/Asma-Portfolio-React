@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header, .footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.header h1, .footer h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav {
+  margin: 20px 0;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Other global styles can be added here. */
