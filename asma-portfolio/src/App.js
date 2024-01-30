@@ -12,8 +12,10 @@ import Projects from './components/Projects'; // Ensure this file exists
 import Resume from './components/Resume'; // Ensure this file exists
 import Contact from './components/Contact';
 import Footer from './components/Footer/Footer';
+import Certifications from './components/Certifications';
 
 import './App.css';
+
 
 function App() {
   return (
@@ -29,6 +31,7 @@ function App() {
             <Route path="/projects" element={<Projects />} /> {/* Changed from /portfolio */}
             <Route path="/resume" element={<Resume />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path='/certifications' element={<Certifications/>}/>
             
             {/* Add other routes if necessary */}
           </Routes>

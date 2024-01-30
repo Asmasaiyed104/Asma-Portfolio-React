@@ -1,23 +1,21 @@
-/* Base styles for nav, applied for XS devices like iPhone SE */
+/* Navigation.css */
+
 nav {
-  background-color: #171f27; /* Dark background for contrast */
+  background-color: #171f27;
   padding: 10px 0;
   text-align: center;
 }
 
 nav a {
   text-decoration: none;
+  display: inline-block; /* Added to make links display in a horizontal line */
   margin: 0 10px;
   padding: 8px 12px;
   border-radius: 5px;
   font-size: 14px;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  /* Gradient text effect */
-  background: linear-gradient(45deg, #F06, #A6E3E9);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
+  background-color: rgb(240, 241, 244); /* Set a solid background color */
+  color: #fff; /* Set text color */
 }
 
 nav a:hover {
@@ -25,58 +23,4 @@ nav a:hover {
   transform: translateY(-3px);
 }
 
-/* Small devices (phones, 600px and up) */
-@media (min-width: 600px) {
-  nav a {
-    margin: 0 15px;
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  nav a {
-    margin: 0 20px;
-  }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  nav a {
-    margin: 0 25px;
-    font-size: 18px;
-  }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  nav a {
-    padding: 15px 30px;
-  }
-}
-
-/* iPhone X and iPhone 11 */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-device-pixel-ratio: 3) {
-  /* Your styles here */
-}
-
-/* Samsung Galaxy S8, S9 */
-@media only screen 
-  and (min-device-width: 360px) 
-  and (max-device-width: 740px) 
-  and (-webkit-device-pixel-ratio: 4) {
-  /* Your styles here */
-}
-
-/* This covers a range of modern phones, including iPhone SE (2nd gen), Galaxy S5/S6/S7, Pixel phones, etc. */
-@media only screen 
-  and (min-device-width: 360px) 
-  and (max-device-width: 640px) 
-  and (-webkit-min-device-pixel-ratio: 2) 
-  and (-webkit-max-device-pixel-ratio: 3) {
-  /* Your styles here */
-}
+/* Media queries for different screen sizes... */
